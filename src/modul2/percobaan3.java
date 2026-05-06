@@ -26,6 +26,15 @@ public class percobaan3 {
                     + "Luas Segitiga\t= " + luas_sg + "\n"
                     + "Luas Lingkaran\t= " + luas_lk ;
             JOptionPane.showMessageDialog(null, hasil, "HASIL PERHITUNGAN\n",1);
+            //output juga ke console
+            System.out.println("==== MENGHITUNG LUAS BANGUN DATAR ====");
+            System.out.println("Panjang Persegi Panjang\t= " + p);
+            System.out.println("Lebar Persegi Panjang\t= " + l);
+            System.out.println("Alas Segitiga\t= " + a);
+            System.out.println("Tinggi Segitiga\t= " + t);
+            System.out.println("Diameter Lingkaran\t= " + d);
+            System.out.println("\n==== H.A.S.I.L  P.E.R.H.I.T.U.N.G.A.N ====");
+            System.out.println(hasil);
         } catch (Exception e) {
             //jika input salah
             JOptionPane.showMessageDialog(null,"Input Harus Berupa Angka","Error",0);
