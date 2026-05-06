@@ -8,9 +8,9 @@ public class percobaan2 {
         methodx mt = new methodx();
         System.out.println("==== PROGRAM MENGHITUNG VOLUME BANGUNAN ===");
         //input diameter dan tinggi (sekali saja)
-        System.out.println("Masukkan Diameter\t: ");
+        System.out.print("Masukkan Diameter\t: ");
         double d = input.nextDouble();
-        System.out.println("Masukkan Tinggi\t: ");
+        System.out.print("Masukkan Tinggi \t: ");
         double t = input.nextDouble();
         
         //memanggil semua method volume
@@ -18,6 +18,11 @@ public class percobaan2 {
         double kerucut = mt.volume_kerucut(d,t);
         double bola = mt.volume_bola(d);
         
+        //menampilkan hasil ke console
+        System.out.println("\n-------- HASIL PERHITUNGAN -------");
+        System.out.println("Volume Tabung \t: " + tabung);
+        System.out.println("Volume Kerucut \t: " + kerucut);
+        System.out.println("Volume Bola \t: " + bola);
     }
     
 }
