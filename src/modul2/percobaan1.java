@@ -1,3 +1,5 @@
+package modul2;
+
 public class percobaan1 {
     public static void main(String[] args) {
         int bil = 10;
