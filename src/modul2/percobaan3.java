@@ -17,9 +17,18 @@ public class percobaan3 {
             double a = Double.parseDouble(JOptionPane.showInputDialog(null, "Masukkan Alas :", "SEGITIGA\n", 3));
             double t = Double.parseDouble(JOptionPane.showInputDialog(null, "Masukkan Tinggi : ", "SEGITIGA\n", 3));
             double d = Double.parseDouble(JOptionPane.showInputDialog(null, "Masukkan Diameter : ", "LINGKARAN\n", 3));
+            //memanggil method
+            double luas_pp = mt.luas_persegi_panjang (p,l);
+            double luas_sg = mt.segitiga (a,t);
+            double luas_lk = mt.lingkaran(d);
+            //output
+            String hasil = "Luas Persegi Panjang\t= " + luas_pp +"\n"
+                    + "Luas Segitiga\t= " + luas_sg + "\n"
+                    + "Luas Lingkaran\t= " + luas_lk ;
+            JOptionPane.showMessageDialog(null, hasil, "HASIL PERHITUNGAN\n",1);
         } catch (Exception e) {
             //jika input salah
-            JOptionPane.showMessageDialog(null,"Input Harus Berupa Angka!","Error",0 );
+            JOptionPane.showMessageDialog(null,"Input Harus Berupa Angka","Error",0);
         } 
         
     }
