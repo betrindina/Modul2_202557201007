@@ -20,7 +20,20 @@ public class methodx {
         double r = d / 2;
         return(4.0 / 3) * Math.PI * r * r * r;
     }
-    
+    //=== METHOD LUAS ===
+    //Method luas persegi panjang
+    double luas_persegi_panjang(double p, double l){
+    return p * l;
+}
+    //Method luas segitiga
+    double segitiga (double a, double t){
+        return 0.5 * a * t;
+    }
+    //Method luas lingkaran
+    double lingkaran ( double d ){
+        double r = d / 2;
+        return Math.PI * r * r;
+    }
     }
     
 
