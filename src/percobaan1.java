@@ -6,8 +6,18 @@ public class percobaan1 {
         try{
             System.out.println(bil / 0);
         }catch (ArithmeticException ai){
-            System.err.println("Eror Aritmatik");
+            System.err.println("Error Aritmatik");
             System.out.println(ai.getMessage());
+        }
+        //eror 2 : index array
+        try{
+            System.out.println(b[3]);
+        }catch (ArrayIndexOutOfBoundsException n){
+            System.err.println("Error karena melebihi kapasitas array");
+            System.out.println(n.getMessage());
+        }catch (Exception e){
+            System.err.println("Ada error");
+            System.out.println(e.getMessage());
         }
     }
  
